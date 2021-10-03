@@ -1,0 +1,65 @@
+{
+  "name": "vue3-install",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "build:client": "vue-cli-service build --dest dist/client",
+    "build:server": "VUE_APP_SSR=true vue-cli-service build --dest dist/server",
+    "build:ssr": "rm -rf ./dist && npm run build:client && npm run build:server"	
+  },
+  "dependencies": {
+    "@hapi/hapi": "^20.2.0",
+    "axios": "^0.22.0",
+    "core-js": "^3.6.5",
+    "global": "^4.4.0",
+    "primeicons": "4.0.0",
+    "primevue": "3.1.0",
+    "register-service-worker": "^1.7.1",
+    "sass": "^1.42.1",
+    "sass-loader": "^10",
+    "vue": "^3.0",
+    "vue-class-component": "latest",
+    "vue-router": "^4.0.10",
+    "vue-template-compiler": "^2.6.14",
+    "vuex": "^4.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@typescript-eslint/parser": "^4.18.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-pwa": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-typescript": "^7.0.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0",
+    "typescript": "~4.1.5"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended",
+      "@vue/typescript/recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2020
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

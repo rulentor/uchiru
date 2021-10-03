@@ -12,3 +12,5 @@ https://www.figma.com/file/dQr6qPMqx7bcBZkRMgmN6M/%D0%A5%D0%B0%D0%BA%D0%B0%D1%82
 2. Клиент wep PWA - vue 3 + PrimeVue
 
 #ссылки
+[https://github.com/rulentor/uchiru/blob/main/src/assets/images/desktop.png]
+[https://github.com/rulentor/uchiru/blob/main/src/assets/images/ask.png]
